@@ -1,0 +1,50 @@
+body{
+	background-image: url(img/shrek.png);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-color:black;
+	font-size: 50px;
+	font-family: fantasy;
+	
+}
+blockquote.bubble { 
+	background-position: center;
+  background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+	text-align: center;
+	height: 0;
+	box-sizing: content-box;
+	line-height: 125px;
+	position: fixed;
+    left: 620px;
+}
+blockquote.speech {
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg); 
+	width: 240px;
+	height: 200px;
+}
+@media (max-width:1063px) {
+	blockquote.bubble { 
+		left: 395px;
+	}
+}
+@media (max-width:677px) {
+	body{
+		background-image: url(img/shrek_phone.png);
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+	blockquote.bubble {
+		left: 130px;
+		bottom: 30px;
+	}		
+}
+@media (max-width:439px) {
+	blockquote.bubble { 
+		left: 40px;
+	}
+}
